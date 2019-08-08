@@ -9,6 +9,7 @@ class Recipes extends Component {
         super(props);
 
         this.updateSelectedIndex = this.updateSelectedIndex.bind(this);
+        this.deleteRecipe = this.deleteRecipe.bind(this);
 
         this.state = {
             recipes: [
@@ -31,11 +32,22 @@ class Recipes extends Component {
         this.setState({selectedIndex: index});
     }
 
+    deleteRecipe() {
+
+        const filteredArray = this.state.recipes.filter((_, i) => i !== this.state.selectedIndex);
+
+
+        this.setState({ 
+            recipes: filteredArray,
+            selectedIndex : 0,
+         });
+    }
+
     render() {
         return (
             <Aux>
                 <RecipeList value={this.state.recipes} updateMethod={this.updateSelectedIndex}/>
-                <Recipe value={this.state.recipes[this.state.selectedIndex]}/>
+                <Recipe value={this.state.recipes[this.state.selectedIndex]} delete={this.deleteRecipe}/>
             </Aux>
         );
     }
