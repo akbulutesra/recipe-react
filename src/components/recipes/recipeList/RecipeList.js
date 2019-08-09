@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './RecipeList.css';
 
 class RecipeList extends Component {
 
@@ -8,7 +9,7 @@ class RecipeList extends Component {
 
     render() {
         const items = this.props.value.map((item, i) =>
-            <li key={i} onClick={() => this.onChangeHandler(i)}
+            <li className="recipeListLi" key={i} onClick={() => this.onChangeHandler(i)}
             >{item.name} </li>
         );
 

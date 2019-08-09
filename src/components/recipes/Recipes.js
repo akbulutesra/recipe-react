@@ -3,6 +3,7 @@ import Aux from '../hoc/Aux';
 import RecipeList from './recipeList/RecipeList';
 import Recipe from './recipe/Recipe';
 import ReactModal from 'react-modal';
+import './Recipes.css';
 
 class Recipes extends Component {
 
@@ -95,12 +96,10 @@ class Recipes extends Component {
 
     render() {
         return (
-            <Aux>
+            <div className="recipesLayout">
                 <RecipeList value={this.state.recipes} updateMethod={this.updateSelectedIndex} />
-                <button onClick={this.handleOpenModal}>Add Recipe</button>
+                <div className="addRecipeButton" onClick={this.handleOpenModal}>Add Recipe</div>
                 <Recipe value={this.state.recipes[this.state.selectedIndex]} delete={this.deleteRecipe} />
-
-
 
                 <ReactModal
                     isOpen={this.state.showModal}
@@ -114,9 +113,8 @@ class Recipes extends Component {
                     <label>Recipe Directions</label>
                     <input type="text" value={this.state.newDirections} onChange={this.handleChangeDirection} />
                     <input type="submit" value="Submit" onClick={this.handleAddRecipe} />
-
                 </ReactModal>
-            </Aux>
+            </div>
         );
     }
 }
