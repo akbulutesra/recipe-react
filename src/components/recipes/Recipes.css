@@ -1,0 +1,22 @@
+.recipesLayout {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.addRecipeButton {
+    text-align: center;
+    border-style: solid;
+    background-color: pink;
+    border-width: 2px;
+    border-radius: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.addRecipeButton:hover {
+    height: 32px;
+    font-size: 20px;
+    background-color: palevioletred;
+}

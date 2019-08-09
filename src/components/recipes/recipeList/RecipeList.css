@@ -1,0 +1,7 @@
+.recipeListLi {
+    font-size: 22px;
+}
+
+.recipeListLi:hover {
+    color: white;
+}

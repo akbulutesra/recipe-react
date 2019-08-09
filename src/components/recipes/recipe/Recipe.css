@@ -1,0 +1,17 @@
+.recipeLayout {
+    border-style: solid;
+    background-color: red;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.recipeTitle {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.recipeSubtitle {
+    font-size: 24px;
+}
