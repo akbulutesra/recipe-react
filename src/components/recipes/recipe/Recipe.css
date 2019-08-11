@@ -3,6 +3,8 @@
     background-color: red;
     border-width: 2px;
     border-radius: 10px;
+    padding: 20px;
+    color: white;
 }
 
 .recipeTitle {
@@ -10,8 +12,14 @@
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
+    margin: 10px;
 }
 
 .recipeSubtitle {
     font-size: 24px;
+    margin: 10px;
+}
+
+.recipeText {
+    margin: 10px;
 }

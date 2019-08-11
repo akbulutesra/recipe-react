@@ -98,8 +98,10 @@ class Recipes extends Component {
         return (
             <div className="recipesLayout">
                 <RecipeList value={this.state.recipes} updateMethod={this.updateSelectedIndex} />
-                <div className="addRecipeButton" onClick={this.handleOpenModal}>Add Recipe</div>
+                <div className="recipeButton" onClick={this.handleOpenModal}>Add Recipe</div>
                 <Recipe value={this.state.recipes[this.state.selectedIndex]} delete={this.deleteRecipe} />
+                <div className="recipeButton" onClick={this.deleteRecipe}>Delete Recipe</div>
+
 
                 <ReactModal
                     isOpen={this.state.showModal}

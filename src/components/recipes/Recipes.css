@@ -3,7 +3,7 @@
     margin-right: 10%;
 }
 
-.addRecipeButton {
+.recipeButton {
     text-align: center;
     border-style: solid;
     background-color: pink;
@@ -13,9 +13,10 @@
     line-height: 30px;
     color: white;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-.addRecipeButton:hover {
+.recipeButton:hover {
     height: 32px;
     font-size: 20px;
     background-color: palevioletred;

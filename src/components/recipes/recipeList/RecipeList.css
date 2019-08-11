@@ -1,5 +1,6 @@
 .recipeListLi {
     font-size: 22px;
+    color: green;
 }
 
 .recipeListLi:hover {
